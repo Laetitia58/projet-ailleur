@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    width:100%;
+    height:auto;
+    background-color: cornflowerblue;
+}
+.accueil{
+    width: 100%;
+    height: auto;
+    background-color: brown;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    .accueil 
+    { margin: 0;
+        padding:30px 2%; 
+    } 
+    #slider 
+    { overflow: hidden;
+    width: 96%; 
+    }
+    #slider figure img 
+        { width: 20%; 
+            height: 640px;
+        float: left; 
+    }
+    #slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0%;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+    }
