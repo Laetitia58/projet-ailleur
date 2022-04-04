@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    width:100%;
+    height:auto;
+    background-color: cornflowerblue;
+}
+#accueil{
+    width: 97.15%;
+    height: auto;
+    background-color: brown;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    30% { left: -100%; }
+    40% { left: -100%; }
+    50% { left: -200%; }
+    60% { left: -200%; }
+    70% { left: -300%; }
+    80% { left: -300%; }
+    90% { left: -400%; }
+    100% { left: -400%; }
+    }
+    
+    #accueil 
+    { margin: 0;
+        padding:30px 1.15% 30px 1.7%; 
+    } 
+    #slider 
+    { overflow: hidden;
+    width: 98%; 
+    }
+    #slider .accueil .slider 
+        { width: 20%; 
+            height: 640px;
+        float: left; 
+    }
+    #slider .accueil { 
+      position: relative;
+      width: 500%;
+      margin: 0%;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 40s slidy infinite; 
+    }
