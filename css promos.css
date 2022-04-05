@@ -73,3 +73,22 @@ td, th
 
 
 
+#imagesMongolie img
+{
+    width: 320px;
+    height: 320px;
+}
+
+
+#imgcarousel_maroc img
+{
+    width: 320px;
+    height: 320px;
+}
+
+
+#imgcarousel_japon img
+{
+    width: 320px;
+    height: 320px;   
+}
