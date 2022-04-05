@@ -34,8 +34,8 @@ header{
     width: 98%; 
     }
     #slider .accueil .slider 
-        { width: 20%; 
-            height: 640px;
+    {   width: 20%; 
+        height: 640px;
         float: left; 
     }
     #slider .accueil { 
@@ -72,23 +72,117 @@ td, th
 }
 
 
-
 #imagesMongolie img
 {
     width: 320px;
     height: 320px;
 }
 
-
-#imgcarousel_maroc img
+#autresoffresspe
 {
-    width: 320px;
-    height: 320px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 70px;
+  color: yellow;
 }
 
 
-#imgcarousel_japon img
+
+
+.slider_offres_spe_m
 {
-    width: 320px;
-    height: 320px;   
+    height:500px;
+    overflow: hidden;
 }
+#autres_offres_speciales
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(235, 213, 213);    
+}
+
+@keyframes slidy 
+{
+    0% { left: 0%; } 
+   33% { left: 0%; } 
+   40% { left: -100%; }
+   66% { left: -100%; } 
+   73% { left: -200%; }
+  100% { left: -200%  }
+}
+
+#contener_maroc
+{    
+    overflow: hidden;
+    width: 700px;  
+    margin-left: 170px;
+}
+
+.slider_offres_spe_m 
+{       
+    float: left;  
+    width:33.33%;  
+}
+
+#imgcarousel_maroc 
+{
+    position: relative;   
+    animation: 21s slidy infinite ;
+    width: 300%;   
+}
+
+article
+{
+   display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+
+
+.slider_offres_spe_j
+{   width: 100%;
+    height:500px;
+    
+}
+
+@keyframes slidy 
+{
+    0% { left: 0%; } 
+   33% { left: 0%; } 
+   40% { left: -100%; }
+   66% { left: -100%; } 
+   73% { left: -200%; }
+  100% { left: -200%  }
+}
+
+#contener_japon
+{
+    overflow: hidden;
+    width: 700px;  
+    margin-right: 170px;
+  
+}
+
+.slider_offres_spe_j  
+{   
+    float: left;  
+}
+
+#imgcarousel_japon 
+{ 
+    position: relative;
+    animation: 21s slidy infinite ;     
+   
+}
+
+.img_japon
+{
+    display: flex;  
+ 
+    width:300%;
+}
+
+
+
