@@ -47,3 +47,29 @@ header{
       font-size: 0;
       animation: 40s slidy infinite; 
     }
+
+#nouscontacter
+{
+    text-decoration: underline; 
+}
+
+
+#nouscontacter:hover
+{     
+    border-style: dotted;
+    text-decoration: yellow;
+}
+
+
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    border: 1px solid black;
+}
+
+
+
