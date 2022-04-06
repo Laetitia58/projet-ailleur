@@ -84,6 +84,7 @@ h1
 {
     font-size: 20px;
     font-style: italic;
+    line-height: 40px;
 }
 #nouscontacter
 {
@@ -95,7 +96,7 @@ h1
 {     
     border-style: dotted;
     padding:7px 10px 10px 10px;
-    line-height: 50px;
+    line-height: 40px;
     border-color: gold;
 }
 
@@ -190,6 +191,66 @@ h4
 {
    background-color: sandybrown;
 }
+
+
+
+
+
+
+
+#tableau_offres_spe
+{
+   display: flex;
+   margin-left: 200px;
+   margin-right: 200px;
+   margin-bottom: 200px;
+   border:2px solid black;
+   padding-left: 30px;
+   justify-content:center;
+
+}
+
+.cellule_colonne
+{
+   width:100px;
+   padding-right:200px;
+   list-style: none;
+}
+
+.taille_cellule
+{
+  width: 300px;
+}
+
+.hauteur_cellule
+{
+    height:40px;
+    padding-top: 20px;
+    list-style: none;
+    border:2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .slider_offres_spe_m
 {
