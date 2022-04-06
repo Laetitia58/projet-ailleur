@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "open sans bold w";
+    src: url(../fonts/OpenSans-Bold.woff) format("woff"); 
+}
+@font-face {
+    font-family: "open sans bold w2";
+    src: url(../fonts/OpenSans-Bold.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "open sans regular w";
+    src: url(../fonts/OpenSans-Regular.woff) format("woff"); 
+}
+@font-face {
+    font-family: "open sans regular w2";
+    src: url(../fonts/OpenSans-Regular.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "poppins bold w";
+    src: url(../fonts/poppins-bold.woff) format("woff"); 
+}
+@font-face {
+    font-family: "poppins bold w2";
+    src: url(../fonts/poppins-bold.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "poppins italic w";
+    src: url(../fonts/poppins-italic.woff) format("woff"); 
+}
+@font-face {
+    font-family: "poppins italic w2";
+    src: url(../fonts/poppins-italic.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "poppins regular w";
+    src: url(../fonts/poppins-regular.woff) format("woff"); 
+}
+@font-face {
+    font-family: "poppins regular w";
+    src: url(../fonts/poppins-regular.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov bold w";
+    src: url(../fonts/volkhov-bold.woff) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov bold w";
+    src: url(../fonts/volkhov-bold.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov italic w";
+    src: url(../fonts/volkhov-italic.woff) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov italic w";
+    src: url(../fonts/volkhov-italic.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov regular w";
+    src: url(../fonts/volkhov-regular.woff) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov regular w";
+    src: url(../fonts/volkhov-regular.woff2) format("woff"); 
+}
+
