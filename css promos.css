@@ -50,43 +50,147 @@ header{
 
 #nouscontacter
 {
-    text-decoration: underline; 
+    color:orangered;
+    text-decoration: underline;
+    font-style: normal; 
 }
-
-
 #nouscontacter:hover
 {     
     border-style: dotted;
-    text-decoration: yellow;
+    padding:7px 10px 10px 10px;
+    line-height: 50px;
+    border-color: gold;
 }
 
+h1
+{
+    border: 5px solid red;
+    border-style: dashed;
+    border-radius:40%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align:center;
+    font-size: 80px;
+}
+
+ 
+
+#titreOffreSpeMongolie 
+{
+    color:orange;
+    animation: clignote 2s linear infinite;
+  }
+  @keyframes clignote {  
+    50% { opacity: 0; }
+  }
+
+
+
+#details
+{
+    font-size: 45px;
+    text-align: center;  
+    margin-bottom: 20px ;
+}  
+
+#detailsArticle
+{
+    font-size: 20px;
+    font-style: italic;
+}
 
 table
 {
-    border-collapse: collapse;
+    border-collapse: collapse; 
+    text-align: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 150px;
 }
 
 td, th
 {
     border: 1px solid black;
+    height: 40px;
+    width:500px;  
+}
+th
+{
+    background-color: gold;
+}
+#duree
+{
+   border-top-left-radius: 25%;
+}
+#paiement
+{
+    border-top-right-radius: 25%;
 }
 
-
+#imagesMongolie
+{
+   margin-left: 150px;
+   margin-bottom: 150px;
+}
 #imagesMongolie img
 {
-    width: 320px;
+    width: 500px;
     height: 320px;
+    border-radius: 50%;
 }
-
+.imgM
+{
+    padding-right: 50px;
+}
+#accueilP1, #accueilP2
+ {
+   text-align: center;
+ }
+#accueilP1
+{
+   margin-bottom: 100px;
+}
+h4
+{
+   font-size: 40px;
+   margin-bottom: 30px;
+}
+#descriptifP1, #descriptifP2
+{
+  font-size: 25px;
+}
 #autresoffresspe
 {
-  text-align: center;
-  padding-top: 40px;
-  font-size: 70px;
-  color: yellow;
+    border: 5px solid red;
+    border-style: dashed;
+    border-radius:40%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align:center;
+    font-size: 80px;
 }
 
-
+#semaine800:hover 
+{
+   background-color: salmon;  
+}
+#semaine700:hover
+{
+   background-color: rosybrown;
+}
+#semaines1300:hover
+{
+   background-color: sandybrown;
+}
 
 
 .slider_offres_spe_m
@@ -95,11 +199,14 @@ td, th
     overflow: hidden;
 }
 #autres_offres_speciales
-{
+{   
+    padding-top: 10px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
-    background-color: rgb(235, 213, 213);    
+    background-color: rgb(235, 213, 213);  
 }
+
 
 @keyframes slidy 
 {
@@ -113,9 +220,11 @@ td, th
 
 #contener_maroc
 {    
+    border-radius: 25%;
     overflow: hidden;
     width: 700px;  
     margin-left: 170px;
+    border:10px dashed red;
 }
 
 .slider_offres_spe_m 
@@ -131,6 +240,8 @@ td, th
     width: 300%;   
 }
 
+
+
 article
 {
    display: flex;
@@ -139,7 +250,38 @@ article
   padding-bottom: 100px;
 }
 
-
+.textImgM
+{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin-left:160px;
+    margin-top: 150px;
+    font-size: 60px;
+    font-weight: bolder;
+    color:red;
+        animation: clignote 2s linear infinite;
+      }
+      @keyframes clignote {  
+        50% { opacity: 0; }
+}
+    
+.textImgJ
+{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin-left:140px;
+    margin-top:200px;
+    font-size: 60px;
+    font-weight:bolder;
+    color:orange;
+        animation: clignote 2s linear infinite;
+      }
+      @keyframes clignote {  
+        50% { opacity: 0; }
+}
+ 
 
 .slider_offres_spe_j
 {   width: 100%;
@@ -159,10 +301,11 @@ article
 
 #contener_japon
 {
+    border-radius: 25%;
     overflow: hidden;
     width: 700px;  
     margin-right: 170px;
-  
+    border:10px dashed red; 
 }
 
 .slider_offres_spe_j  
