@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+</head>
+<body>
+    
+    <p>Formulaire de réservation</p>
+    Veuillez vous assurer que vous remplissez le nom qui figure dans votre passeport.
+
+<!--Problème n° 1 : comment envoyer le texte saisi par le visiteur ? Par quel moyen ?
+
+    Problème n° 2 : une fois que les données ont été envoyées, comment les traiter ? Souhaitez-vous recevoir le message automatiquement par mail ou préférez-vous qu'un programme se charge de l'enregistrer quelque part, puis de l'afficher sur une page visible par tout le monde ?
+
+----------jouter deux attributs à la balise <form>  :
+
+    *method  : indique par quel moyen les données vont être envoyées (réponse au problème n° 1). Il existe deux solutions pour envoyer des données sur le Web :
+
+        method="get"  : c'est une méthode en général assez peu adaptée car elle est limitée à 255 caractères. La particularité vient du fait que les informations seront envoyées dans l'adresse de la page ( http://…  ). La plupart du temps, utiliser l'autre méthode : post  ,
+
+        method="post"  : c'est la méthode la plus utilisée pour les formulaires car elle permet d'envoyer un grand nombre d'informations. Les données saisies dans le formulaire ne transitent pas par la barre d'adresse ;
+
+    *action  : c'est l'adresse de la page ou du programme qui va traiter les informations (réponse au problème n° 2). Cette page se chargera d' envoyer un e-mail avec le message si souhaité, ou bien d'enregistrer le message avec tous les autres dans une base de données.
+    Cela ne peut pas se faire en HTML et CSS ; on utilisera en général un autre langage: PHP.-->
+
+    
+    
+        <form method="post" action="traitement.php">
+            <p>
+                <label for="name">Nom</label> : <input type="text" name="nom" id="name" placeholder="Nom de famille"/>
+            </p>
+         </form>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+    <form method="post" action="traitement.php">
+
+
+
+       <p>Texte à l'intérieur du formulaire</p>
+
+
+
+    </form>
+    
+
+
+
+    <p>Nous vous souhaitons un agréable voyage</p>
+
+
+
+</body>
+</html>
