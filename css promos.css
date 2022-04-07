@@ -2,17 +2,20 @@
     padding: 0%;
     margin: 0%;
 }
-header{
+header
+{
     width:100%;
     height:auto;
     background-color: cornflowerblue;
 }
-#accueil{
+#accueil
+{
     width: 97.15%;
     height: auto;
     background-color: brown;
 }
-@keyframes slidy {
+@keyframes slidy 
+    {
     0% { left: 0%; }
     20% { left: 0%; }
     30% { left: -100%; }
@@ -38,7 +41,8 @@ header{
         height: 640px;
         float: left; 
     }
-    #slider .accueil { 
+    #slider .accueil 
+    { 
       position: relative;
       width: 500%;
       margin: 0%;
@@ -100,33 +104,6 @@ h1
     border-color: gold;
 }
 
-table
-{
-    border-collapse: collapse; 
-    text-align: center;
-    justify-content: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 150px;
-}
-td, th
-{
-    border: 1px solid black;
-    height: 40px;
-    width:500px;  
-}
-th
-{
-    background-color: gold;
-}
-#duree
-{
-   border-top-left-radius: 25%;
-}
-#paiement
-{
-    border-top-right-radius: 25%;
-}
 
 #imagesMongolie
 {
@@ -196,61 +173,79 @@ h4
 
 
 
-
-
-#tableau_offres_spe
+#tableau_forme 
 {
-   display: flex;
-   margin-left: 200px;
-   margin-right: 200px;
-   margin-bottom: 200px;
-   border:2px solid black;
-   padding-left: 30px;
-   justify-content:center;
-
+    padding:0;
+    margin-top:100px;
+    list-style:none;
+    text-align: center;
+    width:1900px;
+    background-color: pink;
 }
-
-.cellule_colonne
+  #tableau_forme ul 
+  {
+    padding:20px;
+    margin:0;
+    list-style:none;
+    text-align: center;
+  }
+  
+  #tableau_forme li 
+  {
+     background-image: linear-gradient(to bottom, #8ac7e4 0%, #f1ee2b 100%);
+     border-radius:20px;
+     margin-bottom:5px;
+     box-shadow: 3px 3px 3px rgb(236, 152, 222);
+     border:solid 1px #cf238d;
+     text-align:initial;
+  }
+  #tableau_forme li li
+  {
+     max-height:0;
+     overflow: hidden;  
+     border-radius:55px;
+     background: linear-gradient(to bottom, #8ac7e4 0%, #f1ee2b 100%);
+     box-shadow: none;
+     border:none;
+     margin:0px;
+  }
+  #tableau_forme a 
+  {
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    font-family: verdana; 
+  }
+  #tableau_forme ul li a, #tableau_forme li:hover li a {
+    font-size:18px;
+  }
+  #tableau_forme li:hover {
+     background: #18e24b;
+  }
+  #tableau_forme li li:hover {
+     background: rgb(236, 170, 206);
+  }
+  #tableau_forme ul li:last-child {
+     border-radius:55px;
+    
+  }
+  #tableau_forme li:hover li {
+    max-height: 150px;
+  }
+legende
 {
-   width:100px;
-   padding-right:200px;
-   list-style: none;
+    color: red;
+    font-weight: bolder;
+    display: block;
+    text-align:right;
+    padding-top: 10px;
+    animation: clignote 0.5s linear infinite;
+    }
+    @keyframes clignote 
+    {  
+    50% { opacity: 0; }
 }
-
-.taille_cellule
-{
-  width: 300px;
-}
-
-.hauteur_cellule
-{
-    height:40px;
-    padding-top: 20px;
-    list-style: none;
-    border:2px solid black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .slider_offres_spe_m
 {
@@ -264,9 +259,9 @@ h4
     width: 100%;
     height: auto;
     background-color: rgb(235, 213, 213);  
-}
-@keyframes slidy 
-{
+    }
+    @keyframes slidy 
+    {
     0% { left: 0%; } 
    33% { left: 0%; } 
    40% { left: -100%; }
@@ -293,8 +288,6 @@ h4
     animation: 21s slidy infinite ;
     width: 300%;   
 }
-
-
 
 article
 {
@@ -324,7 +317,7 @@ article
     position: absolute;
     text-align: center;
     margin-left:140px;
-    margin-top:200px;
+    margin-top:150px;
     font-size: 60px;
     font-weight:bolder;
     color:orange;
