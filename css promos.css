@@ -180,7 +180,6 @@ h4
     list-style:none;
     text-align: center;
     width:1900px;
-    background-color: pink;
 }
   #tableau_forme ul 
   {
@@ -196,13 +195,13 @@ h4
      border-radius:20px;
      margin-bottom:5px;
      box-shadow: 3px 3px 3px rgb(236, 152, 222);
-     border:solid 1px #cf238d;
+     border:solid 1px #d3bdca;
      text-align:initial;
   }
   #tableau_forme li li
   {
      max-height:0;
-     overflow: hidden;  
+     overflow: hidden;
      border-radius:55px;
      background: linear-gradient(to bottom, #8ac7e4 0%, #f1ee2b 100%);
      box-shadow: none;
@@ -235,17 +234,20 @@ h4
   }
 legende
 {
-    color: red;
+    color: red;;
     font-weight: bolder;
     display: block;
     text-align:right;
     padding-top: 10px;
+    padding-right: 70px;
     animation: clignote 0.5s linear infinite;
     }
     @keyframes clignote 
     {  
     50% { opacity: 0; }
 }
+
+
 
 .slider_offres_spe_m
 {
