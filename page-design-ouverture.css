@@ -1,0 +1,54 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.banniere{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.banniere video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banniere h1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  font-size: 315px;
+  text-align: center;
+  font-style: italic;
+  color: #000;
+  line-height: 100vh;
+  mix-blend-mode: screen;
+}
+a {
+    position: absolute;
+    z-index: 10;
+    top:70%;
+    left: 45%;
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    border-radius: 50px;
+background-color: #eccb64;
+text-transform: uppercase;
+}

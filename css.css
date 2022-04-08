@@ -1,127 +1,558 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 header{
-    width:100%;
-    height:auto;
-    background-color: cornflowerblue;
-}
-#accueil{
-    width: 97.15%;
-    height: auto;
-    background-color: brown;
-}
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    30% { left: -100%; }
-    40% { left: -100%; }
-    50% { left: -200%; }
-    60% { left: -200%; }
-    70% { left: -300%; }
-    80% { left: -300%; }
-    90% { left: -400%; }
-    100% { left: -400%; }
-    }
-    
-    #accueil 
-    { margin: 0;
-        padding:30px 1.15% 30px 1.7%; 
-    } 
-    #slider 
-    { overflow: hidden;
-    width: 98%; 
-    }
-    #slider .accueil .slider 
-        { width: 20%; 
-            height: 640px;
-        float: left; 
-    }
-    #slider .accueil { 
-      position: relative;
-      width: 500%;
-      margin: 0%;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 40s slidy infinite; 
-    }
-    .offres{
-        width: 100%;
-        }
-        .titre-promo{
-            margin: 30px 15%;
-            text-align: center;
-            width: 70%;
-            height: 50px;
-            border: 2px solid black;
-            border-radius: 20%;
-        }
-        #promotions{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .promo{
-            box-sizing: border-box;
-            transition: box-shadow 1s;
-            padding: 60px;
-        }
-       .promo10.promo20.promo30{
-           text-align: center;
-           padding-left: 100px;
+    width: 100%;
 
-       }
-        img[alt~="promo1"],img[alt~="promo2"],img[alt~="promo3"]
-            {
-            font-family: 'poppins-regular';
-            font-size: 16px;
-            color:#5E6282 ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 20px;
-            max-width: 280px;
-            height: 360px;
-            border-radius: 20%;
-        
-        }
-        .sejours{
-            width: 100%;
-            }
-            .titre-promo2{
-                margin: 30px 15%;
-                text-align: center;
-                width: 70%;
-                height: 50px;
-                border: 2px solid black;
-                border-radius: 20%;
-            }
-            #sejours{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .sejour{
-                box-sizing: border-box;
-                transition: box-shadow 1s;
-                padding: 60px;
-            }
-           .sejour10.sejour20.sejour30{
-               text-align: center;
-               padding-left: 100px;
+}
+.contener {
+    padding: 30px 0 0 40%;
+    position: absolute;
+    z-index: 11;
+ 
+  }
+  div.contener>button,
+  div.contener>button::after {
+    transition: all 0.3s;
+
+  }
+  div.contener>button {
+    background:none;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 16px;
+    margin: 0px 20px;
+    padding: 10px 45px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  div.contener>button::before,
+  div.contener>button::after {
+      border-radius: 20px;
+    background: #eccb64;
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+  div.contener>button:hover {
+    color: #faf8f8;
+    background-color: none;
+  }
+  .button1::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+  }
+  .button1:hover:after {
+    width: 100%;
+  }
+  .button2::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0%;
+  }
+  .button2:hover:after {
+    width: 100%;
+  }
+  .button3::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+  }
+  .button3:hover:after {
+    width: 100%;
+  }
+  .button4::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0%;
+  }
+  .button4:hover:after {
+    width: 100%;
+  }
+
+.rechercheresponsive{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    margin: 10px 10% 0 0;
+    padding: 10px 0px 20px 60px;
+border: 0px;
+
+
+}
+.champ{
+    margin: 10px 35px;
+        flex-flow: row-wrap;
+        justify-content: flex-start;
+
+   
+}
+.conteneur-recherche{
+    position:absolute;
+    z-index: 10;
+    margin-top: 400px;
+    margin-left:13%;
     
-           }
-            img[alt~="sejour1"],img[alt~="sejour2"],img[alt~="sejour3"]
-                {
-                font-family: 'poppins-regular';
-                font-size: 16px;
-                color:#5E6282 ;
-                align-items: center;
-                justify-content: center;
-                padding-top: 20px;
-                max-width: 280px;
-                height: 360px;
-                border-radius: 20%;
-            
-            }
+
+}
+#date, #lieu, #nombre, #pays, #btnenvoyer1{
+    width: 200px;
+    height: 30px;
+}
+#btn1 {
+    display: inline-block;
+    background-color: #eccb64;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    padding-top:3px;
+    width: 200px;
+    height: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  #btn1 #btnenvoyer1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  #btn1 #btnenvoyer1:after {
+    content: "\2708";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 40px;
+    transition: 0.5s linear;
+  }
+  #btn1:hover {
+    background-color: rgba(168, 40, 8, 0.788);
+    color:#fff;
+  }
+  #btn1:hover #btnenvoyer1 {
+    padding-right: 0px;
+  }
+  #btn1:hover #btnenvoyer1:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media screen and (max-width: 640px)
+{
+    .rechercheresponsive{
+        background:none;
+        border: 0ch;
+       flex-flow: column;
+       box-sizing: border-box;
+       padding: 0
+    }
+    .champ{
+        margin: 20px 25px 15px 25px;
+        height: 500px;
+    }
+    .conteneurrecherche{
+        display: flex;
+        font-size: 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        margin: 10px 0px;
+        height: 400px;
+    }
+    #date, #lieu, #nombre, #pays{
+      width: 350px;
+      border: 0px;
+        background-color: transparent; 
+        padding: 20px 0px;
+        text-align: center;
+        box-sizing: border-box;
+    
+    }
+    #btn1{
+        padding: 0px 100px 20px 80px;
+        font-size: 45px;
+    }
+    #btn1:hover #btnenvoyer1 {
+        padding-right: 120px;
+      }
+
+}
+
+#accueil {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -300%;
+    }
+
+    80% {
+        left: -300%;
+    }
+
+    90% {
+        left: -400%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#accueil {
+    margin-bottom: 80px;
+    padding-bottom:50px;
+}
+
+#slider {
+    overflow: hidden;
+    width: 100%;
+    box-shadow:0px 4px 10px 10px rgba(121, 121, 120, 0.863);
+    
+}
+
+#slider .accueil .slider {
+    width: 20%;
+    height: 640px;
+    float: left;
+    
+}
+
+#slider .accueil {
+    position: relative;
+    width: 500%;
+    margin: 0%;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 40s slidy infinite;
+ 
+}
+.texte-accroche{
+    position: absolute;
+    bottom: 60%;
+    left: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 55px;
+    color: #fff;
+    font-family:fantasy;
+    text-shadow: 5px 5px 2px #000000;
+}
+#titre-accroche{
+    letter-spacing: 10px;
+}
+#phrase-accroche{
+    font-size: 30px;
+    font-weight: 200;
+
+}
+#contener-apropos{
+  width: 100%;
+  height:700px;
+  margin-top: 50px;
+}
+.fond-apropos{
+  position: relative;
+  width: 55%;
+  left: 45%;
+  bottom: 500px;
+  box-shadow:inset 2px 4px 17px 11px #FFFFFF;
+}
+.habillage1{
+  position: absolute;
+  background-color: rgba(168, 40, 8, 0.788);
+  width: 600px;
+  height: 600px;
+  z-index: -10;
+  border-radius: 50%;
+  right: 75%;
+}
+.voilier,.avion{
+  width: 320px;
+  height: 420px;
+  border-radius: 5px;
+}
+.voilier{
+  position: relative;
+  right: 30%;
+  bottom: 600px;
+ box-shadow: 7px 6px 15px #333 ;
+}
+.avion{
+  position: relative;
+  bottom: 750px;
+  box-shadow: 7px 6px 15px #333;
+}
+#text1{
+width: 25%;
+margin:10% 0 0 5%; 
+}
+#text1>p{
+  line-height: 25px;
+  font-size: 20px;
+  text-align: justify;
+}
+h2,#text1{
+  text-align: center;
+  line-height: 45px;
+}
+#citation{
+  font-style: italic;
+}
+#conteneur-promo{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+.groupe-photo{
+  display: flex;
+  margin-left: 10%;
+}
+.contener-photo{
+  width: 420px;
+  height: 320px;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  margin: 10px 140px 20px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.tokyo{
+  background-image: url(/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
+}
+.mongolie{
+  background-image: url(/picture/mongolie-promo.jpg);
+
+}
+.sahara{
+  background-image: url(/picture/sahara-promo.jpg);
+
+}
+.texte{
+  width: 100%;
+  height: 100%;
+ text-align: center;
+ background-color: rgba(0, 0, 0, 0.5);
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+ opacity: 0;
+ transition: all 1s ease-in-out;  
+}
+.texte:hover{
+  opacity: 1;
+}
+.contener-photo .tokyo:hover{
+  transform: scale(1.2);
+}
+.accroche-promo{
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+.etiquettes{
+  position: absolute;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  
+}
+div.etiquettes img{
+  width:80px;
+  height: 80px;
+}
+div.etiquettes img:first-child{
+  margin:0px 50px 0 190px;
+}
+div.etiquettes img:nth-child(2){
+  margin:0px 50px 0 430px;
+}
+div.etiquettes img:last-child{
+  margin:0px 0px 0 430px;
+}
+
+.sejours {
+    width: 100%;
+    background-color: #ffffff;;
+}
+
+#sejours {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    padding-top: 350px;
+    height: 120px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+body::-webkit-scrollbar{
+    width: 20px;
+}
+body::-webkit-scrollbar-track{
+    background:#ffffff00,
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #006eb200;
+    border-radius: 20px;
+    border: 3px solid #eccb64;
+}
+
+
+.sejour {
+    box-sizing: border-box;
+    transition: box-shadow 1s;
+    padding-left: 8%;
+    flex-direction: row-wrap;
+    justify-content: center;
+   width:30%;
+   scrollbar-width: thin;
+   scrollbar-color: blue orange;
+}
+
+.sejour10.sejour20.sejour30 {
+    text-align: center;
+
+}
+
+img[alt~="sejour1"],
+img[alt~="sejour2"],
+img[alt~="sejour3"] {
+    font-family: 'poppins-regular';
+    font-size: 16px;
+    color: #5E6282;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    max-width: 280px;
+    height: 360px;
+    border-radius: 20%;
+
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 1;
+    background: linear-gradient(to right, #eccb64,rgba(168, 40, 8, 0.788));
+    border-top-left-radius: 125px;
+    color: rgb(0, 0, 0);
+    padding: 10px 0 30px;
+    font-size: 15px;
+    line-height:20px ;
+  }
+  .ligne{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .colonne{
+    flex-basis: 18%;
+  }
+  .colonne h4 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .mail{
+    width: fit-content;
+    border-bottom:1px solid rgb(0, 0, 0) ;
+    margin: 20px 0;
+  }
+  #Newsletter{
+    padding-bottom: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid ;
+    margin-bottom: 50px;
+  }
+  #Newsletter .far{
+  font-size: 18px;
+  margin-right:10px;
+  }
+  #Newsletter #envoiefin {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline:none
+  }
+  #Newsletter form>button{
+    background: transparent;
+    border:0;
+    outline: none;
+    cursor: pointer;
+  }
+  #Newsletter form>button .fas{
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  
+  }
+  .social-icons .fa-brands {
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+  cursor: pointer;
+  }
+  @media screen and (max-width:640px)
+  {
+    footer{
+      bottom: unset;
+    }
+    .colonne{
+      flex-basis: 100%;
+    }
+  }
