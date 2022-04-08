@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire agence css.css">
     <title>Formulaire de réservation</title>
 </head>
 <body>
    
     
 <form>
+
+
+
   <section1>
         <h1>Formulaire de réservation</h1>
             <!--date format dd-mm-yyyy utiliser DOMString-->
         <h3>Votre choix</h3> <br> 
-            Votre destination: 
-            <br>
-        Dates de votre séjour: <label for="arrivée">du</label><input type="date" id="start" name="trip-start"
-             value="DOMString"> <label for="arrivée">au</label><input type="date" id="start" name="trip-start"
+            <p>Votre destination: </p>
+            <br><br>
+        <p>  
+            Dates de votre séjour: <label for="arrivée"> du </label><input type="date" id="start" name="trip-start"
+             value="DOMString"> <label for="arrivée"> au </label><input type="date" id="start" name="trip-start"
              value="DOMString">
+        </p>     
             <br>
-       <label for="name">Nombre de passagers</label> : <input type="number" name="nom" id="name" placeholder="Nombre de passagers"/>
+            <mandatory min="1" max="10" />
+       <label class="passagers" for="name">Nombre de passagers</label> : <input type="number" name="nom" id="name" placeholder="Nombre de passagers" min="1" max="10" />
             <br>
   </section1> 
 
@@ -42,16 +49,18 @@
 
 <section2>
     
-        <h3>Vos informationstions personnelles</h3> 
+        <h3>Vos informations personnelles</h3> 
         <form method="post" action="traitement.php">
-               
-                <label for="name">Nom</label> : <input type="text" name="nom" id="name" placeholder="Nom de famille*"/>
-                <label for="name">Prénom</label> : <input type="text" name="nom" id="name" placeholder="Prénom*"/>
+            <div>   
+                <label for="name">Nom*</label> : <input type="text" name="nom" id="name" placeholder="Nom de famille"/>
+                <label for="name">Prénom*</label> : <input type="text" name="nom" id="name" placeholder="Prénom"/>
             <br>
             Veuillez vous assurer que vous remplissez le nom qui figure dans votre passeport.
             <br>
-                <label for="phone">Numéro de téléphone : </label><input type="tel" id="phone" name="phone"  placeholder="Téléphone*">
-                <label for="email">Adresse e-mail : </label><input type="email" id="email" name="email" placeholder="Adresse e-mail*"> 
+               <div>
+                   <label for="phone">Numéro de téléphone* : </label><input type="tel" id="phone" name="phone"  placeholder="Téléphone">
+                   <label for="email">Adresse e-mail* : </label><input type="email" id="email" name="email" placeholder="Adresse e-mail"> 
+               </div>
             <br>
                 
               
@@ -65,31 +74,32 @@
                 <input type="radio" id="professionnel_non" name="professionnel_non" value="professionnel_non">
                 <label for="non">Non</label>
             </div>
+            </div>
         </form>
+         <h3 id="margin_bott">Choisissez votre numéro de cabine</h3>
   </section2>             
                
 
   <section3> 
-            <p>Choisissez votre numéro de cabine</p>
-
-            <img src="images agence de voyage/plan_cabine.png">  
-
-          <div><form>
-                    <select name="nom" size="1">
-                        <option>A5
-                        <option>A6
-                        <option>A7
-                        <option>A8
-                        <option>B5
-                        <option>B6
-                        <option>B7
-                        <option>A5
-                        <option>A6
-                        <option>A7
-                        <option>A8
-                        <option>B5
-                        <option>B6
-                        <option>B7  
+            
+           <div id="plan">
+                <img src="images agence de voyage/plan_cabine.png">  
+           </div>    
+           
+          <div id="siege"><form>
+                    <select name="nom" size="4">
+                        <option> A5 </option>
+                        <option> A6  
+                        <option> A7 
+                        <option> A8 
+                        <option> B5 
+                        <option> B6 
+                        <option> B7 
+                        <option> B8   
+                        <option> C5 
+                        <option> C6 
+                        <option> C7
+                        <option> C8    
                     </select>
                </form>
           </div>     
@@ -116,10 +126,11 @@
           <br>
                 <label for="pass">Règlement par CB </label> <input type="password" name="pass" id="pass"/>
 
+  </section5>             
     <hr>
-                
-
-  </section5>        
+    
+  
+  
          
 </form>
 
@@ -142,6 +153,7 @@
 <p>
     Nous vous souhaitons un agréable voyage
 </p>
+
 </footer>
 
 

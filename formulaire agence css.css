@@ -1,0 +1,84 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body
+{
+    font-size: 20px;
+}
+section1{
+    text-align: center;
+    word-spacing: 8px;
+}
+
+section1 input
+{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+}
+h1
+{  
+    color: blue;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 130px;
+    padding-bottom: 140px;
+    margin-bottom: 80px;
+    background-color: rgb(241, 236, 245);
+    border-radius: 15%;
+}
+h3
+{
+    color: blue;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+.passagers
+{
+    margin-left: 700px;
+}
+section2
+{
+    text-align: center;
+    word-spacing: 8px;
+    line-height: 80px;
+}
+section2 input
+{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+section3
+{
+   display: flex;
+   margin-top: 200px;
+   margin-bottom: 200px;
+   margin-left: 600px;
+}
+#siege
+{
+   margin-left: 150px;
+
+}
+
+
+
+
+
+
+footer
+{  
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin-bottom: 80px;
+    background-color: rgb(241, 236, 245);
+}
