@@ -7,71 +7,142 @@
     <title>Formulaire de réservation</title>
 </head>
 <body>
+   
     
-    <p>Formulaire de réservation</p>
-    Veuillez vous assurer que vous remplissez le nom qui figure dans votre passeport.
+<form>
+  <section1>
+        <h1>Formulaire de réservation</h1>
+            <!--date format dd-mm-yyyy utiliser DOMString-->
+        <h3>Votre choix</h3> <br> 
+            Votre destination: 
+            <br>
+        Dates de votre séjour: <label for="arrivée">du</label><input type="date" id="start" name="trip-start"
+             value="DOMString"> <label for="arrivée">au</label><input type="date" id="start" name="trip-start"
+             value="DOMString">
+            <br>
+       <label for="name">Nombre de passagers</label> : <input type="number" name="nom" id="name" placeholder="Nombre de passagers"/>
+            <br>
+  </section1> 
 
-<!--Problème n° 1 : comment envoyer le texte saisi par le visiteur ? Par quel moyen ?
+                          <!--(Comment envoyer le texte saisi par le visiteur ? une fois les données envoyées, souhaitez-vous recevoir 
+                               le message automatiquement par mail ou préférez-vous qu'un programme se charge de l'enregistrer quelque part, 
+                                puis de l'afficher sur une page visible par tout le monde ?)
 
-    Problème n° 2 : une fois que les données ont été envoyées, comment les traiter ? Souhaitez-vous recevoir le message automatiquement par mail ou préférez-vous qu'un programme se charge de l'enregistrer quelque part, puis de l'afficher sur une page visible par tout le monde ?
+                               ----------ajouter deux attributs à la balise <form>  :
 
-----------jouter deux attributs à la balise <form>  :
+                          *method  : indique par quel moyen les données vont être envoyées:
+                           method="get"  : limitée à 255 caractères. La particularité:informations envoyées dans l'adresse de la page ( http://…  ).
 
-    *method  : indique par quel moyen les données vont être envoyées (réponse au problème n° 1). Il existe deux solutions pour envoyer des données sur le Web :
+                           method="post"  : la plus utilisée car elle permet d'envoyer un grand nombre d'informations. Les données saisies dans le 
+                                            formulaire ne transitent pas par la barre d'adresse ;
 
-        method="get"  : c'est une méthode en général assez peu adaptée car elle est limitée à 255 caractères. La particularité vient du fait que les informations seront envoyées dans l'adresse de la page ( http://…  ). La plupart du temps, utiliser l'autre méthode : post  ,
+                          *action  : c'est l'adresse de la page ou du programme qui va traiter les informations. Cette page se chargera d' envoyer
+                            un e-mail avec le message si souhaité, ou bien d'enregistrer le message avec tous les autres dans une base de données.
+                              Cela ne peut pas se faire en HTML et CSS ; on utilisera en général un autre langage: PHP.-->
 
-        method="post"  : c'est la méthode la plus utilisée pour les formulaires car elle permet d'envoyer un grand nombre d'informations. Les données saisies dans le formulaire ne transitent pas par la barre d'adresse ;
-
-    *action  : c'est l'adresse de la page ou du programme qui va traiter les informations (réponse au problème n° 2). Cette page se chargera d' envoyer un e-mail avec le message si souhaité, ou bien d'enregistrer le message avec tous les autres dans une base de données.
-    Cela ne peut pas se faire en HTML et CSS ; on utilisera en général un autre langage: PHP.-->
-
+<section2>
     
-    
+        <h3>Vos informationstions personnelles</h3> 
         <form method="post" action="traitement.php">
-            <p>
                
-                <label for="name">Nombre de passagers</label> : <input type="number" name="nom" id="name" placeholder="Nombre de passagers"/>
-                <label for="name">Nom</label> : <input type="text" name="nom" id="name" placeholder="Nom de famille"/>
-                <label for="name">Prénom</label> : <input type="text" name="nom" id="name" placeholder="Prénom"/>
-                <br>
-                <label for="pass">Numéro de CB_ w  :</label> <input type="password" name="pass" id="pass" />
+                <label for="name">Nom</label> : <input type="text" name="nom" id="name" placeholder="Nom de famille*"/>
+                <label for="name">Prénom</label> : <input type="text" name="nom" id="name" placeholder="Prénom*"/>
+            <br>
+            Veuillez vous assurer que vous remplissez le nom qui figure dans votre passeport.
+            <br>
+                <label for="phone">Numéro de téléphone : </label><input type="tel" id="phone" name="phone"  placeholder="Téléphone*">
+                <label for="email">Adresse e-mail : </label><input type="email" id="email" name="email" placeholder="Adresse e-mail*"> 
+            <br>
+                
+              
+                                <!--choix oui-non utiliser radio-->
+            <div>
+                Voyagez-vous pour motif professionnel ?
+                <input type="radio" id="professionnel_oui" name="professionnel_oui" value="professionnel_oui"
+                       checked>
+                <label for="oui">Oui</label>
+             
+                <input type="radio" id="professionnel_non" name="professionnel_non" value="professionnel_non">
+                <label for="non">Non</label>
+            </div>
+        </form>
+  </section2>             
+               
 
-                <hr>
-                * Champs obligatoires
+  <section3> 
+            <p>Choisissez votre numéro de cabine</p>
 
-            </p>
-         </form>
+            <img src="images agence de voyage/plan_cabine.png">  
 
-        
+          <div><form>
+                    <select name="nom" size="1">
+                        <option>A5
+                        <option>A6
+                        <option>A7
+                        <option>A8
+                        <option>B5
+                        <option>B6
+                        <option>B7
+                        <option>A5
+                        <option>A6
+                        <option>A7
+                        <option>A8
+                        <option>B5
+                        <option>B6
+                        <option>B7  
+                    </select>
+               </form>
+          </div>     
+  </section3>       
+
+  <section4>
+                                  
+                                <!--cocher une case utiliser checkbox--> 
+                <label for="recevoir_des_e_offres"><input type="checkbox" id="recevoir_des_e_offres" name="recevoir_des_e_offres">Je souhaite recevoir des offres et informations personnalisées de la part d'Ailleurs. Je peux me <br> 
+                    désabonner à tout moment de tout ou partie de ces communications.</label>
+  </section4>
 
 
+  <section5>
+            <ul>       
+                <li>Nous utiliserons les informations ci-dessus pour vous envoyer votre billet et les informations relatives à votre vol.</li>
+                    Lorsque vous contactez notre service client, votre appel peut être enregistré afin de nous aider à améliorer notre<br>
+                    service. 
+                <li>Si vous ne souhaitez pas que votre conversation soit enregistrée, veuillez en informer le conseiller au début de</li>
+                    votre échange.
+                <li>Si vous ne souhaitez pas apparaître sur une liste de démarchage téléphonique, vous pouvez vous inscrire sur la liste<br>
+                d’opposition au démarchage téléphonique (Bloctel website).</li>       
+              </ul> 
+          <br>
+                <label for="pass">Règlement par CB </label> <input type="password" name="pass" id="pass"/>
 
+    <hr>
+                
 
+  </section5>        
+         
+</form>
 
-
-
-
-
+    
  
 
 
 
-
-
-
-
-
-
-
-    </form>
-    
-
-
-
-    <p>Nous vous souhaitons un agréable voyage</p>
-
-
-
 </body>
+
+
+<footer>
+    <h4>Sécurité et confidentialité</h4>
+        Nous mettons tout en œuvre pour garantir la sécurité et la confidentialité de vos données personnelles.
+        <br>
+        Politique de confidentialité d'Ailleurs<br> 
+
+ * Champs obligatoires
+        
+<p>
+    Nous vous souhaitons un agréable voyage
+</p>
+</footer>
+
+
 </html>
