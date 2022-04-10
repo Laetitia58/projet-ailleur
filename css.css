@@ -1,306 +1,345 @@
 * {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
-header{
-    width: 100%;
+
+header {
+  width: 100%;
 
 }
+
 .contener {
-    padding: 30px 0 0 40%;
-    position: absolute;
-    z-index: 11;
- 
-  }
-  div.contener>button,
-  div.contener>button::after {
-    transition: all 0.3s;
+  padding: 30px 0 0 40%;
+  position: absolute;
+  z-index: 11;
 
-  }
-  div.contener>button {
-    background:none;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 0px;
-    border-left: 0px;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    display: inline;
-    font-size: 16px;
-    margin: 0px 20px;
-    padding: 10px 45px;
-    position: relative;
-    text-transform: uppercase;
-  }
-  div.contener>button::before,
-  div.contener>button::after {
-      border-radius: 20px;
-    background: #eccb64;
-    content: "";
-    position: absolute;
-    z-index: -1;
-  }
-  div.contener>button:hover {
-    color: #faf8f8;
-    background-color: none;
-  }
-  .button1::after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0;
-  }
-  .button1:hover:after {
-    width: 100%;
-  }
-  .button2::after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0%;
-  }
-  .button2:hover:after {
-    width: 100%;
-  }
-  .button3::after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0;
-  }
-  .button3:hover:after {
-    width: 100%;
-  }
-  .button4::after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0%;
-  }
-  .button4:hover:after {
-    width: 100%;
-  }
+}
 
-.rechercheresponsive{
-    width: 80%;
-    height: 40px;
-    display: flex;
-    margin: 10px 10% 0 0;
-    padding: 10px 0px 20px 60px;
-border: 0px;
+div.contener>button,
+div.contener>button::after {
+  transition: all 0.3s;
+
+}
+
+div.contener>button {
+  background: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 0px;
+  border-left: 0px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  display: inline;
+  font-size: 16px;
+  margin: 0px 20px;
+  padding: 10px 45px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+div.contener>button::before,
+div.contener>button::after {
+  border-radius: 20px;
+  background: #eccb64;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+div.contener>button:hover {
+  color: #faf8f8;
+  background-color: none;
+}
+
+.button1::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.button1:hover:after {
+  width: 100%;
+}
+
+.button2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0%;
+}
+
+.button2:hover:after {
+  width: 100%;
+}
+
+.button3::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.button3:hover:after {
+  width: 100%;
+}
+
+.button4::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0%;
+}
+
+.button4:hover:after {
+  width: 100%;
+}
+
+.rechercheresponsive {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  margin: 10px 10% 0 0;
+  padding: 10px 0px 20px 60px;
+  border: 0px;
+}
+
+.champ {
+  margin: 10px 35px;
+  flex-flow: row-wrap;
+  justify-content: flex-start;
+}
+
+.conteneur-recherche {
+  position: absolute;
+  z-index: 10;
+  margin-top: 400px;
+  margin-left: 5%;
 
 
 }
-.champ{
-    margin: 10px 35px;
-        flex-flow: row-wrap;
-        justify-content: flex-start;
 
-   
+#date,
+#lieu,
+#nombre,
+#pays,
+#btnenvoyer1 {
+  width: 200px;
+  height: 30px;
 }
-.conteneur-recherche{
-    position:absolute;
-    z-index: 10;
-    margin-top: 400px;
-    margin-left:13%;
-    
 
-}
-#date, #lieu, #nombre, #pays, #btnenvoyer1{
-    width: 200px;
-    height: 30px;
-}
 #btn1 {
-    display: inline-block;
-    background-color: #eccb64;
-    border-radius: 50px;
-    border: 1px solid #000000;
-    color: #000000;
+  display: inline-block;
+  background-color: #eccb64;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 3px;
+  width: 200px;
+  height: 25px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#btn1 #btnenvoyer1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btn1 #btnenvoyer1:after {
+  content: "\2708";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 40px;
+  transition: 0.5s linear;
+}
+
+#btn1:hover {
+  background-color: rgba(168, 40, 8, 0.788);
+  color: #fff;
+}
+
+#btn1:hover #btnenvoyer1 {
+  padding-right: 0px;
+}
+
+#btn1:hover #btnenvoyer1:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+@media screen and (max-width: 640px) {
+  .rechercheresponsive {
+    background: none;
+    border: 0ch;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 0
+  }
+
+  .champ {
+    margin: 20px 25px 15px 25px;
+    height: 500px;
+  }
+
+  .conteneurrecherche {
+    display: flex;
+    font-size: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    height: 400px;
+  }
+
+  #date,
+  #lieu,
+  #nombre,
+  #pays {
+    width: 350px;
+    border: 0px;
+    background-color: transparent;
+    padding: 20px 0px;
     text-align: center;
-    font-size: 18px;
-    padding-top:3px;
-    width: 200px;
-    height: 25px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 10px;
+    box-sizing: border-box;
+
   }
-  #btn1 #btnenvoyer1 {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+
+  #btn1 {
+    padding: 0px 100px 20px 80px;
+    font-size: 45px;
   }
-  #btn1 #btnenvoyer1:after {
-    content: "\2708";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: 40px;
-    transition: 0.5s linear;
-  }
-  #btn1:hover {
-    background-color: rgba(168, 40, 8, 0.788);
-    color:#fff;
-  }
+
   #btn1:hover #btnenvoyer1 {
-    padding-right: 0px;
+    padding-right: 120px;
   }
-  #btn1:hover #btnenvoyer1:after {
-    opacity: 1;
-    right: 0;
-  }
-
-
-@media screen and (max-width: 640px)
-{
-    .rechercheresponsive{
-        background:none;
-        border: 0ch;
-       flex-flow: column;
-       box-sizing: border-box;
-       padding: 0
-    }
-    .champ{
-        margin: 20px 25px 15px 25px;
-        height: 500px;
-    }
-    .conteneurrecherche{
-        display: flex;
-        font-size: 20px;
-        border-radius: 20px;
-        box-sizing: border-box;
-        margin: 10px 0px;
-        height: 400px;
-    }
-    #date, #lieu, #nombre, #pays{
-      width: 350px;
-      border: 0px;
-        background-color: transparent; 
-        padding: 20px 0px;
-        text-align: center;
-        box-sizing: border-box;
-    
-    }
-    #btn1{
-        padding: 0px 100px 20px 80px;
-        font-size: 45px;
-    }
-    #btn1:hover #btnenvoyer1 {
-        padding-right: 120px;
-      }
 
 }
 
 #accueil {
-    width: 100%;
-    height: auto;
-    background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
 }
 
 @keyframes slidy {
-    0% {
-        left: 0%;
-    }
+  0% {
+    left: 0%;
+  }
 
-    20% {
-        left: 0%;
-    }
+  20% {
+    left: 0%;
+  }
 
-    30% {
-        left: -100%;
-    }
+  30% {
+    left: -100%;
+  }
 
-    40% {
-        left: -100%;
-    }
+  40% {
+    left: -100%;
+  }
 
-    50% {
-        left: -200%;
-    }
+  50% {
+    left: -200%;
+  }
 
-    60% {
-        left: -200%;
-    }
+  60% {
+    left: -200%;
+  }
 
-    70% {
-        left: -300%;
-    }
+  70% {
+    left: -300%;
+  }
 
-    80% {
-        left: -300%;
-    }
+  80% {
+    left: -300%;
+  }
 
-    90% {
-        left: -400%;
-    }
+  90% {
+    left: -400%;
+  }
 
-    100% {
-        left: -400%;
-    }
+  100% {
+    left: -400%;
+  }
 }
 
 #accueil {
-    margin-bottom: 80px;
-    padding-bottom:50px;
+  margin-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 #slider {
-    overflow: hidden;
-    width: 100%;
-    box-shadow:0px 4px 10px 10px rgba(121, 121, 120, 0.863);
-    
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 4px 10px 10px rgba(121, 121, 120, 0.863);
+
 }
 
 #slider .accueil .slider {
-    width: 20%;
-    height: 640px;
-    float: left;
-    
+  width: 20%;
+  height: 640px;
+  float: left;
+
 }
 
 #slider .accueil {
-    position: relative;
-    width: 500%;
-    margin: 0%;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 40s slidy infinite;
- 
-}
-.texte-accroche{
-    position: absolute;
-    bottom: 60%;
-    left: 20%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 55px;
-    color: #fff;
-    font-family:fantasy;
-    text-shadow: 5px 5px 2px #000000;
-}
-#titre-accroche{
-    letter-spacing: 10px;
-}
-#phrase-accroche{
-    font-size: 30px;
-    font-weight: 200;
+  position: relative;
+  width: 500%;
+  margin: 0%;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 40s slidy infinite;
 
 }
-#contener-apropos{
+
+.texte-accroche {
+  position: absolute;
+  left: 20%;
+  bottom: 45%;
+  text-align: center;
+  font-size: 55px;
+  color: #fff;
+  font-family: fantasy;
+  text-shadow: 5px 5px 2px #000000;
+}
+
+#titre-accroche {
+  font-family: 'AlfaSlabOne-Regular';
+}
+
+#phrase-accroche {
+  font-size: 30px;
+  font-weight: 200px;
+  font-family: 'AlfaSlabOne-Regular';
+
+}
+#phrase-accroche span{
+  font-family: 'IngridDarling-Regular';
+  font-size: 50px;
+}
+
+#contener-apropos {
   width: 100%;
-  height:700px;
+  height: 700px;
   margin-top: 50px;
 }
-.fond-apropos{
-  position: relative;
+
+.fond-apropos {
+  position: absolute;
   width: 55%;
   left: 45%;
-  bottom: 500px;
-  box-shadow:inset 2px 4px 17px 11px #FFFFFF;
+  top: 800px;
+  box-shadow: inset 2px 4px 17px 11px #FFFFFF;
 }
-.habillage1{
+
+.habillage1 {
   position: absolute;
   background-color: rgba(168, 40, 8, 0.788);
   width: 600px;
@@ -309,48 +348,61 @@ border: 0px;
   border-radius: 50%;
   right: 75%;
 }
-.voilier,.avion{
+
+.voilier,
+.avion {
   width: 320px;
   height: 420px;
   border-radius: 5px;
 }
-.voilier{
-  position: relative;
+
+.voilier {
+  position: absolute;
   right: 30%;
-  bottom: 600px;
- box-shadow: 7px 6px 15px #333 ;
-}
-.avion{
-  position: relative;
-  bottom: 750px;
+  top: 1000px;
   box-shadow: 7px 6px 15px #333;
 }
-#text1{
-width: 25%;
-margin:10% 0 0 5%; 
+
+/*
+.avion{
+  top: 500px;
+  position: relative;
+  border: 2px solid red;
+  box-shadow: 7px 6px 15px #333;
+}*/
+#text1 {
+  width: 25%;
+  margin: 10% 0 0 5%;
 }
-#text1>p{
+
+#text1>p {
   line-height: 25px;
   font-size: 20px;
   text-align: justify;
 }
-h2,#text1{
+
+h2,
+#text1 {
   text-align: center;
   line-height: 45px;
 }
-#citation{
+
+#citation {
   font-style: italic;
 }
-#conteneur-promo{
+
+#conteneur-promo {
   display: flex;
   width: 100%;
   margin-top: 30px;
 }
-.groupe-photo{
+
+.groupe-photo {
   display: flex;
   margin-left: 10%;
 }
-.contener-photo{
+
+.contener-photo {
   width: 420px;
   height: 320px;
   flex-flow: wrap;
@@ -362,183 +414,787 @@ h2,#text1{
   background-size: cover;
 
 }
-.tokyo{
-  background-image: url(/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
+
+.tokyo {
+  background-image: url(/projet-ailleur/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
 }
-.mongolie{
-  background-image: url(/picture/mongolie-promo.jpg);
+
+.mongolie {
+  background-image: url(/projet-ailleur/picture/mongolie-promo.jpg);
 
 }
-.sahara{
-  background-image: url(/picture/sahara-promo.jpg);
+
+.sahara {
+  background-image: url(/projet-ailleur/picture/sahara-promo.jpg);
 
 }
-.texte{
+
+.texte {
   width: 100%;
   height: 100%;
- text-align: center;
- background-color: rgba(0, 0, 0, 0.5);
- color: rgb(255, 255, 255);
- font-size: 20px;
- opacity: 0;
- transition: all 1s ease-in-out;  
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
-.texte:hover{
+
+.texte:hover {
   opacity: 1;
 }
-.contener-photo .tokyo:hover{
+
+.contener-photo .tokyo:hover {
   transform: scale(1.2);
 }
-.accroche-promo{
+
+.accroche-promo {
   text-align: center;
   font-size: 40px;
   line-height: 60px;
 }
-.etiquettes{
+
+.etiquettes {
   position: absolute;
   flex-flow: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   z-index: 10;
-  
+
 }
-div.etiquettes img{
-  width:80px;
+
+div.etiquettes img {
+  width: 80px;
   height: 80px;
 }
-div.etiquettes img:first-child{
-  margin:0px 50px 0 190px;
+
+div.etiquettes img:first-child {
+  margin: 0px 50px 0 190px;
 }
-div.etiquettes img:nth-child(2){
-  margin:0px 50px 0 430px;
+
+div.etiquettes img:nth-child(2) {
+  margin: 0px 50px 0 430px;
 }
-div.etiquettes img:last-child{
-  margin:0px 0px 0 430px;
+
+div.etiquettes img:last-child {
+  margin: 0px 0px 0 430px;
 }
 
 .sejours {
-    width: 100%;
-    background-color: #ffffff;;
+  width: 100%;
+  background-color: #ffffff;
+  ;
 }
 
 #sejours {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
-    width: 100%;
-    padding-top: 350px;
-    height: 120px;
-    overflow: scroll;
-    flex-wrap: wrap;
-}
-body::-webkit-scrollbar{
-    width: 20px;
-}
-body::-webkit-scrollbar-track{
-    background:#ffffff00,
-}
-body::-webkit-scrollbar-thumb{
-    background-color: #006eb200;
-    border-radius: 20px;
-    border: 3px solid #eccb64;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+  padding-top: 350px;
+  height: 120px;
+  overflow: scroll;
+  flex-wrap: wrap;
 }
 
-
-.sejour {
-    box-sizing: border-box;
-    transition: box-shadow 1s;
-    padding-left: 8%;
-    flex-direction: row-wrap;
-    justify-content: center;
-   width:30%;
-   scrollbar-width: thin;
-   scrollbar-color: blue orange;
+body::-webkit-scrollbar {
+  width: 20px;
 }
 
-.sejour10.sejour20.sejour30 {
-    text-align: center;
+body::-webkit-scrollbar-track {
+  background: #ffffff00,
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #006eb200;
+  border-radius: 20px;
+  border: 3px solid #eccb64;
+}
+
+.texte-sejour h2, .accroche-promo h2 {
+  font-family: 'IngridDarling-Regular';
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+#text1 h1{
+  font-family: 'IngridDarling-Regular';
+  font-size: 60px;
+}
+
+#contener-apropos {
+  width: 100%;
+  height: 700px;
+}
+
+.fond-apropos {
+  position: absolute;
+  width: 55%;
+  left: 45%;
+  bottom: 5%;
+  box-shadow: 200px 1px 85px 32px rgba(248, 3, 3, 0.75) inset;
+}
+
+.habillage1 {
+  position: absolute;
+  background-color: rgba(168, 40, 8, 0.788);
+  width: 600px;
+  height: 600px;
+  z-index: -10;
+  border-radius: 50%;
+  right: 75%;
+}
+
+.voilier,
+.avion {
+  width: 320px;
+  height: 420px;
+  border-radius: 5px;
+}
+
+.voilier {
+  position: absolute;
+  left: 39%;
+  bottom: 4%;
+  box-shadow: 7px 6px 15px #333;
+}
+
+.avion {
+  position: absolute;
+  left: 55%;
+  top: 700px;
+  box-shadow: 7px 6px 15px #333;
+}
+
+#text1 {
+  width: 25%;
+  margin: 10% 0 0 5%;
+}
+
+#text1>p {
+  line-height: 25px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h2,
+#text1 {
+  text-align: center;
+  line-height: 45px;
+}
+
+#citation {
+  font-style: italic;
+}
+
+#promos {
+  width: 100%;
+  height: auto;
+}
+
+#conteneur-promo {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.groupe-photo {
+  display: flex;
+  margin-left: 6%;
+}
+
+.contener-photo {
+  width: 420px;
+  height: 320px;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  margin: 10px 60px 20px 0px;
+  overflow: hidden;
+  transform-origin: 50% 50%;
+  transition: 2s linear;
 
 }
 
-img[alt~="sejour1"],
-img[alt~="sejour2"],
-img[alt~="sejour3"] {
-    font-family: 'poppins-regular';
-    font-size: 16px;
-    color: #5E6282;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    max-width: 280px;
-    height: 360px;
-    border-radius: 20%;
+#tokyo {
+  background-image: url(/projet-ailleur/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
+  transform-origin: 50% 50%;
+  transition: 2s linear;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 
 }
-footer{
-    width: 100%;
-    position: absolute;
-    bottom: 1;
-    background: linear-gradient(to right, #eccb64,rgba(168, 40, 8, 0.788));
-    border-top-left-radius: 125px;
-    color: rgb(0, 0, 0);
-    padding: 10px 0 30px;
-    font-size: 15px;
-    line-height:20px ;
-  }
-  .ligne{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .colonne{
-    flex-basis: 18%;
-  }
-  .colonne h4 {
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .mail{
-    width: fit-content;
-    border-bottom:1px solid rgb(0, 0, 0) ;
-    margin: 20px 0;
-  }
-  #Newsletter{
-    padding-bottom: 15px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid ;
-    margin-bottom: 50px;
-  }
-  #Newsletter .far{
+
+#mongolie {
+  background-image: url(/projet-ailleur/picture/mongolie-promo.jpg);
+  transform-origin: 50% 50%;
+  transition: 2s linear;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#sahara {
+  background-image: url(/projet-ailleur/picture/sahara-promo.jpg);
+  transform-origin: 50% 50%;
+  transition: 2s linear;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.texte {
+  position: relative;
+  width: 420px;
+  height: 320px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  transition: all 1s ease-in-out;
+  z-index: 20;
+  bottom: 320px;
+  display: none;
+}
+
+#tokyo:hover~.texte {
+  display: block;
+}
+
+#tokyo:hover {
+  transform: scale(1.2);
+}
+
+#sahara:hover {
+  transform: scale(1.2);
+}
+
+#mongolie:hover {
+  transform: scale(1.2);
+}
+
+.accroche-promo {
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.etiquettes {
+  position: absolute;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+
+}
+
+div.etiquettes img {
+  width: 80px;
+  height: 80px;
+}
+
+div.etiquettes img:first-child {
+  margin: 0px 50px 0 100px;
+}
+
+div.etiquettes img:nth-child(2) {
+  margin: 0px 50px 0 350px;
+}
+
+div.etiquettes img:last-child {
+  margin: 0px 0px 0 345px;
+}
+
+.texte-sejour {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+}
+
+#sejourA {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 40px;
+
+}
+
+#contener-sejour {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  overflow: scroll;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+.sejourmaldives,
+.sejourborabora,
+.sejourargentine,
+.sejourchili,
+.sejourperou,
+.sejourcapsud,
+.sejourislande,
+.sejournorvege,
+.sejourvietnam {
+  width: 550px;
+  height: 420px;
+  margin-bottom: 20px;
+  padding: 10px 2px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*
+
+.sejourborabora
+.sejourargentine
+.sejourchili
+.sejourperou
+.sejourcapsud
+.sejourislande
+.sejournorvege
+.sejourvietnam
+*/
+#sejourA span {
+  position: absolute;
+  font-family: 'IngridDarling-Regular';
+  font-size: 90px;
+  left: 25%;
+  top: 33%;
+  color: #FFFFFF;
+  text-shadow: -4px 3px 0 #d88508, -14px 7px 0 #0a0e27;
+}
+
+.sejourmaldives {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+  box-sizing: border-box;
+
+}
+
+.M1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Maldive/maldives-centrale.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.M2,
+.M3,
+.M4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.M2 {
+  background-image: url(/projet-ailleur/picture/Maldive/maldive-coté1.jpg);
+  background-size: cover;
+}
+
+.M3 {
+  background-image: url(/projet-ailleur/picture/Maldive/maldive-coté2.jpg);
+  background-size: cover;
+}
+
+.M4 {
+  background-image: url(/projet-ailleur/picture/Maldive/maldives-coté3.jpg);
+  background-size: cover;
+}
+
+.sejourborabora {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.BB1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracentrale.jpg);
+  background-size: cover;
+}
+
+.BB2,
+.BB3,
+.BB4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.BB2 {
+  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracoté1.jpg);
+  background-size: cover;
+}
+
+.BB3 {
+  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracoté2.jpg);
+  background-size: cover;
+}
+
+.BB4 {
+  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracote3.jpg);
+  background-size: cover;
+}
+
+.sejourcapsud {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.C1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Cap-sud/photo-centralcap.jpg);
+  background-size: cover;
+}
+
+.C2,
+.C3,
+.C4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.C2 {
+  background-image: url(/projet-ailleur/picture/Cap-sud/photo-capcoté1.jpg);
+  background-size: cover;
+}
+
+.C3 {
+  background-image: url(/projet-ailleur/picture/Cap-sud/photo-capcoté2.jpg);
+  background-size: cover;
+}
+
+.C4 {
+  background-image: url(/projet-ailleur/picture/Cap-sud/photo-capcoté3.jpg);
+  background-size: cover;
+}
+
+.sejourchili {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.CH1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Chili/chili-imagecentre.jpg);
+  background-size: cover;
+}
+
+.CH2,
+.CH3,
+.CH4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.CH2 {
+  background-image: url(/projet-ailleur/picture/Chili/chili-coté1.jpg);
+  background-size: cover;
+}
+
+.CH3 {
+  background-image: url(/projet-ailleur/picture/Chili/chili-coté2.jpg);
+  background-size: cover;
+}
+
+.CH4 {
+  background-image: url(/projet-ailleur/picture/Chili/chili-coté3.jpg);
+  background-size: cover;
+}
+
+.sejourperou {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.P1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Perou/Machu\ Picchu\ centrale.jpg);
+  background-size: cover;
+}
+
+.P2,
+.P3,
+.P4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.P2 {
+  background-image: url(/projet-ailleur/picture/Perou/coté-1.jpg);
+  background-size: cover;
+}
+
+.P3 {
+  background-image: url(/projet-ailleur/picture/Perou/coté-2.jpeg);
+  background-size: cover;
+}
+
+.P4 {
+  background-image: url(/projet-ailleur/picture/Perou/coté-3.jpeg);
+  background-size: cover;
+}
+
+.sejourvietnam {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.V1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnam-centrale.jpg);
+  background-size: cover;
+}
+
+.V2,
+.V3,
+.V4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.V2 {
+  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnamcoté1.jpg);
+  background-size: cover;
+}
+
+.V3 {
+  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnamcoté2.jpg);
+  background-size: cover;
+}
+
+.V4 {
+  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnamcoté3.jpg);
+  background-size: cover;
+}
+
+.sejourargentine {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.A1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecentrale.jpg);
+  background-size: cover;
+}
+
+.A2,
+.A3,
+.A4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.A2 {
+  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecoté1.jpg);
+  background-size: cover;
+}
+
+.A3 {
+  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecoté2.jpg);
+  background-size: cover;
+}
+
+.A4 {
+  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecoté3.jpg);
+  background-size: cover;
+}
+
+.sejournorvege {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.N1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecentrale.jpg);
+  background-size: cover;
+}
+
+.N2,
+.N3,
+.N4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.N2 {
+  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecoté1.jpg);
+  background-size: cover;
+}
+
+.N3 {
+  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecoté2.jpg);
+  background-size: cover;
+}
+
+.N4 {
+  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecoté3.jpeg);
+  background-size: cover;
+}
+
+.sejourislande {
+  box-shadow: 8px 9px 6px 5px rgba(0, 0, 0, 0.534);
+}
+
+.I1 {
+  width: 70%;
+  height: 99%;
+  float: right;
+  background-image: url(/projet-ailleur/picture/Islande/photo-islandecentrale.jpg);
+  background-size: cover;
+}
+
+.I2,
+.I3,
+.I4 {
+  width: 25%;
+  height: 30%;
+  margin: 1.25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.I2 {
+  background-image: url(/projet-ailleur/picture/Islande/photo-ilsnadecoté1.jpg);
+  background-size: cover;
+}
+
+.I3 {
+  background-image: url(/projet-ailleur/picture/Islande/photo-islandecoté2.jpg);
+  background-size: cover;
+}
+
+.I4 {
+  background-image: url(/projet-ailleur/picture/Islande/photo-islandecoté3.jpg);
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+  background: linear-gradient(to right, #eccb64, rgba(168, 40, 8, 0.788));
+  border-top-left-radius: 125px;
+  color: rgb(0, 0, 0);
+  padding: 10px 0 30px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.ligne {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.colonne {
+  flex-basis: 18%;
+}
+
+.colonne h4 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.mail {
+  width: fit-content;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  margin: 20px 0;
+}
+
+#Newsletter {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  margin-bottom: 50px;
+}
+
+#Newsletter .far {
   font-size: 18px;
-  margin-right:10px;
-  }
-  #Newsletter #envoiefin {
+  margin-right: 10px;
+}
+
+#Newsletter #envoiefin {
   width: 100%;
   background: transparent;
   color: #ccc;
   border: 0;
-  outline:none
-  }
-  #Newsletter form>button{
-    background: transparent;
-    border:0;
-    outline: none;
-    cursor: pointer;
-  }
-  #Newsletter form>button .fas{
+  outline: none
+}
+
+#Newsletter form>button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#Newsletter form>button .fas {
   font-size: 16px;
   color: rgba(204, 204, 204, 0);
-  
-  }
-  .social-icons .fa-brands {
+
+}
+
+.social-icons .fa-brands {
   width: 45px;
   height: 40px;
   border-radius: 50%;
@@ -546,13 +1202,14 @@ footer{
   line-height: 40px;
   font-size: 40px;
   cursor: pointer;
+}
+
+@media screen and (max-width:640px) {
+  footer {
+    bottom: unset;
   }
-  @media screen and (max-width:640px)
-  {
-    footer{
-      bottom: unset;
-    }
-    .colonne{
-      flex-basis: 100%;
-    }
+
+  .colonne {
+    flex-basis: 100%;
   }
+}
