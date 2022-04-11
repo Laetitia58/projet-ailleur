@@ -1,0 +1,12 @@
+@font-face {
+    font-family:'IngridDarling-Regular';
+    src:url("/projet-ailleur/Ingrid_Darling/IngridDarling-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family:'BebasNeue-Regular';
+    src:url("/projet-ailleur/police/BebasNeue-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family:'Alfaslab';
+    src:url("/projet-ailleur/police/AlfaSlabOne-Regular.ttf") format('truetype');
+}

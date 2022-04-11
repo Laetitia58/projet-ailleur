@@ -281,20 +281,16 @@ div.contener>button:hover {
 
 }
 
-#slider .accueil .slider {
+.slider {
   width: 20%;
   height: 640px;
   float: left;
 
 }
 
-#slider .accueil {
+.accueil {
   position: relative;
   width: 500%;
-  margin: 0%;
-  left: 0;
-  text-align: left;
-  font-size: 0;
   animation: 40s slidy infinite;
 
 }
@@ -416,16 +412,16 @@ h2,
 }
 
 .tokyo {
-  background-image: url(/projet-ailleur/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
+  background-image: url(/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
 }
 
 .mongolie {
-  background-image: url(/projet-ailleur/picture/mongolie-promo.jpg);
+  background-image: url(/picture/mongolie-promo.jpg);
 
 }
 
 .sahara {
-  background-image: url(/projet-ailleur/picture/sahara-promo.jpg);
+  background-image: url(/picture/sahara-promo.jpg);
 
 }
 
@@ -514,12 +510,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .texte-sejour h2, .accroche-promo h2 {
-  font-family: 'IngridDarling-Regular';
+  font-family:'IngridDarling-Regular';
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 #text1 h1{
-  font-family: 'IngridDarling-Regular';
+  font-family:'IngridDarling-Regular';
   font-size: 60px;
 }
 
@@ -619,7 +615,7 @@ h2,
 }
 
 #tokyo {
-  background-image: url(/projet-ailleur/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
+  background-image: url(/picture/depositphotos_46544869-stock-photo-tokyo-sensoji-ji-temple-in.jpg);
   transform-origin: 50% 50%;
   transition: 2s linear;
   background-repeat: no-repeat;
@@ -630,7 +626,7 @@ h2,
 }
 
 #mongolie {
-  background-image: url(/projet-ailleur/picture/mongolie-promo.jpg);
+  background-image: url(/picture/mongolie-promo.jpg);
   transform-origin: 50% 50%;
   transition: 2s linear;
   background-repeat: no-repeat;
@@ -640,7 +636,7 @@ h2,
 }
 
 #sahara {
-  background-image: url(/projet-ailleur/picture/sahara-promo.jpg);
+  background-image: url(/picture/sahara-promo.jpg);
   transform-origin: 50% 50%;
   transition: 2s linear;
   background-repeat: no-repeat;
@@ -769,7 +765,7 @@ div.etiquettes img:last-child {
 */
 #sejourA span {
   position: absolute;
-  font-family: 'IngridDarling-Regular';
+  font-family:'IngridDarling-Regular';
   font-size: 90px;
   left: 25%;
   top: 33%;
@@ -787,7 +783,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Maldive/maldives-centrale.jpg);
+  background-image: url(/picture/Maldive/maldives-centrale.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -803,17 +799,17 @@ div.etiquettes img:last-child {
 }
 
 .M2 {
-  background-image: url(/projet-ailleur/picture/Maldive/maldive-coté1.jpg);
+  background-image: url(/picture/Maldive/maldive-coté1.jpg);
   background-size: cover;
 }
 
 .M3 {
-  background-image: url(/projet-ailleur/picture/Maldive/maldive-coté2.jpg);
+  background-image: url(/picture/Maldive/maldive-coté2.jpg);
   background-size: cover;
 }
 
 .M4 {
-  background-image: url(/projet-ailleur/picture/Maldive/maldives-coté3.jpg);
+  background-image: url(/picture/Maldive/maldives-coté3.jpg);
   background-size: cover;
 }
 
@@ -825,7 +821,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracentrale.jpg);
+  background-image: url(/picture/Bora-bora/photo-boraboracentrale.jpg);
   background-size: cover;
 }
 
@@ -841,17 +837,17 @@ div.etiquettes img:last-child {
 }
 
 .BB2 {
-  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracoté1.jpg);
+  background-image: url(/picture/Bora-bora/photo-boraboracoté1.jpg);
   background-size: cover;
 }
 
 .BB3 {
-  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracoté2.jpg);
+  background-image: url(/picture/Bora-bora/photo-boraboracoté2.jpg);
   background-size: cover;
 }
 
 .BB4 {
-  background-image: url(/projet-ailleur/picture/Bora-bora/photo-boraboracote3.jpg);
+  background-image: url(/picture/Bora-bora/photo-boraboracote3.jpg);
   background-size: cover;
 }
 
@@ -863,7 +859,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Cap-sud/photo-centralcap.jpg);
+  background-image: url(/picture/Cap-sud/photo-centralcap.jpg);
   background-size: cover;
 }
 
@@ -879,17 +875,17 @@ div.etiquettes img:last-child {
 }
 
 .C2 {
-  background-image: url(/projet-ailleur/picture/Cap-sud/photo-capcoté1.jpg);
+  background-image: url(/picture/Cap-sud/photo-capcoté1.jpg);
   background-size: cover;
 }
 
 .C3 {
-  background-image: url(/projet-ailleur/picture/Cap-sud/photo-capcoté2.jpg);
+  background-image: url(/picture/Cap-sud/photo-capcoté2.jpg);
   background-size: cover;
 }
 
 .C4 {
-  background-image: url(/projet-ailleur/picture/Cap-sud/photo-capcoté3.jpg);
+  background-image: url(/picture/Cap-sud/photo-capcoté3.jpg);
   background-size: cover;
 }
 
@@ -901,7 +897,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Chili/chili-imagecentre.jpg);
+  background-image: url(/picture/Chili/chili-imagecentre.jpg);
   background-size: cover;
 }
 
@@ -917,17 +913,17 @@ div.etiquettes img:last-child {
 }
 
 .CH2 {
-  background-image: url(/projet-ailleur/picture/Chili/chili-coté1.jpg);
+  background-image: url(/picture/Chili/chili-coté1.jpg);
   background-size: cover;
 }
 
 .CH3 {
-  background-image: url(/projet-ailleur/picture/Chili/chili-coté2.jpg);
+  background-image: url(/picture/Chili/chili-coté2.jpg);
   background-size: cover;
 }
 
 .CH4 {
-  background-image: url(/projet-ailleur/picture/Chili/chili-coté3.jpg);
+  background-image: url(/picture/Chili/chili-coté3.jpg);
   background-size: cover;
 }
 
@@ -939,7 +935,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Perou/Machu\ Picchu\ centrale.jpg);
+  background-image: url(/picture/Perou/Machu\ Picchu\ centrale.jpg);
   background-size: cover;
 }
 
@@ -955,17 +951,17 @@ div.etiquettes img:last-child {
 }
 
 .P2 {
-  background-image: url(/projet-ailleur/picture/Perou/coté-1.jpg);
+  background-image: url(/picture/Perou/coté-1.jpg);
   background-size: cover;
 }
 
 .P3 {
-  background-image: url(/projet-ailleur/picture/Perou/coté-2.jpeg);
+  background-image: url(/picture/Perou/coté-2.jpeg);
   background-size: cover;
 }
 
 .P4 {
-  background-image: url(/projet-ailleur/picture/Perou/coté-3.jpeg);
+  background-image: url(/picture/Perou/coté-3.jpeg);
   background-size: cover;
 }
 
@@ -977,7 +973,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnam-centrale.jpg);
+  background-image: url(/picture/Vietnam/photo-vietnam-centrale.jpg);
   background-size: cover;
 }
 
@@ -993,17 +989,17 @@ div.etiquettes img:last-child {
 }
 
 .V2 {
-  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnamcoté1.jpg);
+  background-image: url(/picture/Vietnam/photo-vietnamcoté1.jpg);
   background-size: cover;
 }
 
 .V3 {
-  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnamcoté2.jpg);
+  background-image: url(/picture/Vietnam/photo-vietnamcoté2.jpg);
   background-size: cover;
 }
 
 .V4 {
-  background-image: url(/projet-ailleur/picture/Vietnam/photo-vietnamcoté3.jpg);
+  background-image: url(/picture/Vietnam/photo-vietnamcoté3.jpg);
   background-size: cover;
 }
 
@@ -1015,7 +1011,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecentrale.jpg);
+  background-image: url(/picture/Argentine/photo-argentinecentrale.jpg);
   background-size: cover;
 }
 
@@ -1032,17 +1028,17 @@ div.etiquettes img:last-child {
 }
 
 .A2 {
-  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecoté1.jpg);
+  background-image: url(/picture/Argentine/photo-argentinecoté1.jpg);
   background-size: cover;
 }
 
 .A3 {
-  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecoté2.jpg);
+  background-image: url(/picture/Argentine/photo-argentinecoté2.jpg);
   background-size: cover;
 }
 
 .A4 {
-  background-image: url(/projet-ailleur/picture/Argentine/photo-argentinecoté3.jpg);
+  background-image: url(/picture/Argentine/photo-argentinecoté3.jpg);
   background-size: cover;
 }
 
@@ -1054,7 +1050,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecentrale.jpg);
+  background-image: url(/picture/Norvege/photo-norvegecentrale.jpg);
   background-size: cover;
 }
 
@@ -1070,17 +1066,17 @@ div.etiquettes img:last-child {
 }
 
 .N2 {
-  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecoté1.jpg);
+  background-image: url(/picture/Norvege/photo-norvegecoté1.jpg);
   background-size: cover;
 }
 
 .N3 {
-  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecoté2.jpg);
+  background-image: url(/picture/Norvege/photo-norvegecoté2.jpg);
   background-size: cover;
 }
 
 .N4 {
-  background-image: url(/projet-ailleur/picture/Norvege/photo-norvegecoté3.jpeg);
+  background-image: url(/picture/Norvege/photo-norvegecoté3.jpeg);
   background-size: cover;
 }
 
@@ -1092,7 +1088,7 @@ div.etiquettes img:last-child {
   width: 70%;
   height: 99%;
   float: right;
-  background-image: url(/projet-ailleur/picture/Islande/photo-islandecentrale.jpg);
+  background-image: url(/picture/Islande/photo-islandecentrale.jpg);
   background-size: cover;
 }
 
@@ -1108,17 +1104,17 @@ div.etiquettes img:last-child {
 }
 
 .I2 {
-  background-image: url(/projet-ailleur/picture/Islande/photo-ilsnadecoté1.jpg);
+  background-image: url(/picture/Islande/photo-ilsnadecoté1.jpg);
   background-size: cover;
 }
 
 .I3 {
-  background-image: url(/projet-ailleur/picture/Islande/photo-islandecoté2.jpg);
+  background-image: url(/picture/Islande/photo-islandecoté2.jpg);
   background-size: cover;
 }
 
 .I4 {
-  background-image: url(/projet-ailleur/picture/Islande/photo-islandecoté3.jpg);
+  background-image: url(/picture/Islande/photo-islandecoté3.jpg);
   background-size: cover;
 }
 
