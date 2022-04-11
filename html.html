@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="/police/font-ingrid.css"
-    <script src="https://kit.fontawesome.com/29ac4cabe1.js"></script>
-    <title>ailleurs agence de voyage</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="/police/font-ingrid.css" >
+  <script src="https://kit.fontawesome.com/29ac4cabe1.js"></script>
+  </script>
+  <title>ailleurs agence de voyage</title>
 </head>
+
 <body>
-    <header>
-        <div class="contener">
-            <button type="button" class="button1">Séjour</button>
-            <button type="button" class="button2">Circuit</button>
-            <button type="button" class="button3">Espace client</button>
-            <button type="button" class="button4">Contact</button>
-          </div>
-    
-<nav class="conteneur-recherche">
-    <form method="post" action="form.php" class="conteneurrecherche">
+  <header>
+    <div class="contener">
+      <button type="button" class="button1">Séjour</button>
+      <button type="button" class="button2">Circuit</button>
+      <button type="button" class="button3">Espace client</button>
+      <button type="button" class="button4">Contact</button>
+    </div>
+
+    <nav class="conteneur-recherche">
+      <form method="post" action="form.php" class="conteneurrecherche">
         <fieldset class="rechercheresponsive">
           <div class="champ">
             <input type="text" id="lieu" name="départ" placeholder="Lieu de départ">
           </div>
           <div class="champ">
-            <input type="date" id="date" name="date de départ" >
+            <input type="date" id="date" name="date de départ">
           </div>
           <div class="champ">
-          <select id="nombre" name="nombre de personne" >
-                <option value="">Nombre de personne</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </optgroup>
+            <select id="nombre" name="nombre de personne">
+              <option value="">Nombre de personne</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              </optgroup>
             </select>
-           </div>
+          </div>
           <div class="champ">
             <select id="pays" name="pays">
-                <option value="">Lieu de départ</option>
+              <option value="">Lieu de départ</option>
               <optgroup label="Europe">
                 <option value="france">France</option>
                 <option value="belgique">Belgique</option>
                 <option value="suisse">Suisse</option>
-               </optgroup>
+              </optgroup>
               <optgroup label="Afrique">
                 <option value="algerie">Algérie</option>
                 <option value="tunisie">Tunisie</option>
@@ -57,200 +60,202 @@
                 <option value="madagascar">Madagascar</option>
                 <option value="benin">Bénin</option>
                 <option value="togo">Togo</option>
-               </optgroup>
+              </optgroup>
               <optgroup label="Amerique">
                 <option value="canada">Canada</option>
               </optgroup>
             </select>
           </div>
-          <div >
-            <bouton id="btn1"input type="submit" value="Envoyer">
-                <span id="btnenvoyer1">Rechercher</span>
+          <div>
+            <bouton id="btn1" input type="submit" value="Envoyer">
+              <span id="btnenvoyer1">Rechercher</span>
             </bouton>
           </div>
         </fieldset>
       </form>
     </nav>
-</header>
-    <section id= "accueil">
-        <div id="slider">
-            <figure class="accueil">
-                <img class="slider" src="/picture/photo-slider.jpg" alt>
-                <img class="slider"src="/picture/photo-slider1.jpg" alt>
-                <img class="slider"src="/picture/photo-slider2.jpg" alt>
-                <img class="slider"src="/picture/photo-slider4.jpg" alt>
-                <img class="slider"src="/picture/photo-slider5.jpg" alt>
-            </figure>
-        </div>
-        <div class="texte-accroche">
-        <h3 id="titre-accroche">Et toi? Tu te réveilles où demain?</h3>
-        <p id="phrase-accroche">Le tout en un en un seul mot <span>Ailleurs</span></p>
-        </div>
-    </section>
-<section>
-        <nav id="contener-apropos">
-          <div class="habillage1"></div>
-          <div id="text1">
-            <h2>Explorer Vivre Partir</h2>
-            <h1>Ailleurs</h1>
-            <p>Le monde a tant à donner, tant à partager. Voyager est selon nous l'un des plus beau cadeau de la vie.</p> 
-            <p> vous propose de découvrir ou redécouvrir ce qui rendra votre monde plus grand.</p>
-            <p id="citation">« Si vous souhaitez voyager vite et loin, il vous faut voyager léger.
-            Oubliez toutes vos envies, vos jalousies, votre rancœur, votre égoïsme et vos peurs. »</p> 
-            <p>– Cesare Pavese</p>
-          </div>
-            <img class="fond-apropos" src="/picture/background-avant-propos.jpg" alt="fond" >
-            <img class="voilier"src="/picture/photo-avant-propos2.jpg" alt="voilier sur l'eau">
-            <img class="avion"src="/picture/photo-avant-propos1.jpg" alt="avion qui vole">
-        </nav>
-</section>
-<section>
-        <article id="promos">
-            <div class="accroche-promo">
-             <H2>Evadez-vous à petit prix</H2> 
-              <p>avec nos offres du monde à prix "Ailleurs"</p>
+  </header>
+  <section id="accueil">
+    <div id="slider">
+      <figure class="accueil">
+        <img class="slider" src="/picture/photo-slider.jpg" alt>
+        <img class="slider" src="/picture/photo-slider1.jpg" alt>
+        <img class="slider" src="/picture/photo-slider2.jpg" alt>
+        <img class="slider" src="/picture/photo-slider4.jpg" alt>
+        <img class="slider" src="/picture/photo-slider5.jpg" alt>
+      </figure>
+    </div>
+    <div class="texte-accroche">
+      <h3 id="titre-accroche">Et toi? Tu te réveilles où demain?</h3>
+      <p id="phrase-accroche">Le tout en un en un seul mot <span>Ailleurs</span></p>
+    </div>
+  </section>
+  <section>
+    <nav id="contener-apropos">
+      <div class="habillage1"></div>
+      <div id="text1">
+        <h2>Explorer Vivre Partir</h2>
+        <h1>Ailleurs</h1>
+        <p>Le monde a tant à donner, tant à partager. Voyager est selon nous l'un des plus beau cadeau de la vie.</p>
+        <p> vous propose de découvrir ou redécouvrir ce qui rendra votre monde plus grand.</p>
+        <p id="citation">« Si vous souhaitez voyager vite et loin, il vous faut voyager léger.
+          Oubliez toutes vos envies, vos jalousies, votre rancœur, votre égoïsme et vos peurs. »</p>
+        <p>– Cesare Pavese</p>
+      </div>
+      <img class="fond-apropos" src="/picture/background-avant-propos.jpg" alt="fond">
+      <img class="voilier" src="/picture/photo-avant-propos2.jpg" alt="voilier sur l'eau">
+      <img class="avion" src="/picture/photo-avant-propos1.jpg" alt="avion qui vole">
+    </nav>
+  </section>
+  <section>
+    <article id="promos">
+      <div class="accroche-promo">
+        <H2>Evadez-vous à petit prix</H2>
+        <p>avec nos offres du monde à prix "Ailleurs"</p>
+      </div>
+      <div id="conteneur-promo">
+        <div class="groupe-photo">
+          <div class="contener-photo">
+            <div id="tokyo"></div>
+            <div class="texte">
+              <p> Partez découvrir</p>
+              <h4>Tokyo</h4>
+              <p>Ses temples, ses jardins et toute sont histoire.</p>
+              <p>Réservez des maintenant pour seulement</p>
+              <p>357 euros </p>
+              <p>(vol/ hébergement et visite comprise)</p>
             </div>
-          <div id="conteneur-promo">
-              <div class="groupe-photo">  
-                <div class="contener-photo">
-                  <div id="tokyo"></div>
-                    <div class="texte">
-                      <p> Partez découvrir</p>
-                      <h4>Tokyo</h4>
-                      <p>Ses temples, ses jardins et toute sont histoire.</p>
-                      <p>Réservez des maintenant pour seulement</p>
-                      <p>357 euros </p>
-                      <p>(vol/ hébergement et visite comprise)</p>
-                    </div>
-                </div>
-                <div class="contener-photo">
-                    <div id="sahara"></div>
-                    <div class="texte">sahara</div>
-                </div>
-                <div class="contener-photo">
-                <div id="mongolie"></div>
-                    <div class="texte">mongolie</div>
-                </div>
-              </div>
-          
-              <div class="etiquettes">
-                  <img src="/picture//Vert et Jaune Équipe de Football Logo.png" alt="etiquette de reduction">
-                  <img src="/picture//Vert et Jaune Équipe de Football Logo.png" alt="etiquette de reduction">
-                  <img src="/picture//Vert et Jaune Équipe de Football Logo.png" alt="etiquette de reduction">
-              </div>
           </div>
-        </article> 
-        <div class="texte-sejour">
-          <h2>Accordez vous un instant de rêve</h2>
-        <p>Avec le reste de nos destinations</p></div>
+          <div class="contener-photo">
+            <div id="sahara"></div>
+            <div class="texte">sahara</div>
+          </div>
+          <div class="contener-photo">
+            <div id="mongolie"></div>
+            <div class="texte">mongolie</div>
+          </div>
+        </div>
+
+        <div class="etiquettes">
+          <img src="/picture//Vert et Jaune Équipe de Football Logo.png" alt="etiquette de reduction">
+          <img src="/picture//Vert et Jaune Équipe de Football Logo.png" alt="etiquette de reduction">
+          <img src="/picture//Vert et Jaune Équipe de Football Logo.png" alt="etiquette de reduction">
+        </div>
+      </div>
+    </article>
+    <div class="texte-sejour">
+      <h2>Accordez vous un instant de rêve</h2>
+      <p>Avec le reste de nos destinations</p>
+    </div>
     <article id="sejourA">
-            <div id="contener-sejour">
-              <div class="sejourmaldives">
-                <span>Les Maldives</span>
-                <div class="M1"></div>
-                <div class="M2"></div>
-                <div class="M3"></div>
-                <div class="M4"></div>
-              </div>
-              <div class="sejourborabora">
-                <span>Bora-Bora</span>
-              <div class="BB1"></div>
-                <div class="BB2"></div>
-                <div class="BB3"></div>
-                <div class="BB4"></div>
-              </div>
-              <div class="sejourcapsud">
-                <span>Cap Sud</span>
-                <div class="C1"></div>
-                <div class="C2"></div>
-                <div class="C3"></div>
-                <div class="C4"></div>
-              </div>
-              <div class="sejourchili">
-                <span>Le Chili</span>
-                <div class="CH1"></div>
-                <div class="CH2"></div>
-                <div class="CH3"></div>
-                <div class="CH4"></div>
-              </div>
-              <div class="sejourperou">
-                <span>Le Perou</span>
-                <div class="P1"></div>
-                <div class="P2"></div>
-                <div class="P3"></div>
-                <div class="P4"></div>
-              </div>
-              <div class="sejourvietnam">
-                <span>Le Vietnam</span>
-                <div class="V1"></div>
-                <div class="V2"></div>
-                <div class="V3"></div>
-                <div class="V4"></div>
-              </div>
-              <div class="sejourargentine">
-                <span>L'Argentine</span>
-                <div class="A1"></div>
-                <div class="A2"></div>
-                <div class="A3"></div>
-                <div class="A4"></div>
-              </div>
-              <div class="sejournorvege">
-                <span>La Norvège</span>
-                <div class="N1"></div>
-                <div class="N2"></div>
-                <div class="N3"></div>
-                <div class="N4"></div>
-              </div>
-              <div class="sejourislande">
-                <span>L'Islande</span>
-                <div class="I1"></div>
-                <div class="I2"></div>
-                <div class="I3"></div>
-                <div class="I4"></div>
-              </div>
-            </div>
-        </article>
-</section>
-<footer>
+      <div id="contener-sejour">
+        <div class="sejourmaldives">
+          <span>Les Maldives</span>
+          <div class="M1"></div>
+          <div class="M2"></div>
+          <div class="M3"></div>
+          <div class="M4"></div>
+        </div>
+        <div class="sejourborabora">
+          <span>Bora-Bora</span>
+          <div class="BB1"></div>
+          <div class="BB2"></div>
+          <div class="BB3"></div>
+          <div class="BB4"></div>
+        </div>
+        <div class="sejourcapsud">
+          <span>Cap Sud</span>
+          <div class="C1"></div>
+          <div class="C2"></div>
+          <div class="C3"></div>
+          <div class="C4"></div>
+        </div>
+        <div class="sejourchili">
+          <span>Le Chili</span>
+          <div class="CH1"></div>
+          <div class="CH2"></div>
+          <div class="CH3"></div>
+          <div class="CH4"></div>
+        </div>
+        <div class="sejourperou">
+          <span>Le Perou</span>
+          <div class="P1"></div>
+          <div class="P2"></div>
+          <div class="P3"></div>
+          <div class="P4"></div>
+        </div>
+        <div class="sejourvietnam">
+          <span>Le Vietnam</span>
+          <div class="V1"></div>
+          <div class="V2"></div>
+          <div class="V3"></div>
+          <div class="V4"></div>
+        </div>
+        <div class="sejourargentine">
+          <span>L'Argentine</span>
+          <div class="A1"></div>
+          <div class="A2"></div>
+          <div class="A3"></div>
+          <div class="A4"></div>
+        </div>
+        <div class="sejournorvege">
+          <span>La Norvège</span>
+          <div class="N1"></div>
+          <div class="N2"></div>
+          <div class="N3"></div>
+          <div class="N4"></div>
+        </div>
+        <div class="sejourislande">
+          <span>L'Islande</span>
+          <div class="I1"></div>
+          <div class="I2"></div>
+          <div class="I3"></div>
+          <div class="I4"></div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer>
     <div class="ligne">
-    <div class="colonne">
-            <p>Ailleurs est un service de voyage vous permettant de donner vie a vos envies et vos rêves d'enfance</p>
-    </div>
-        <div class="colonne">
-            <h4>Contact</h4>
-              <p>qui sommes-nous</p>
-              <p>nous contacter</p>
-              <p>le groupe</p>
-              <p>Assurance voyage</p>
-              <p class="mail">ailleursetmoi@partir.com"</p>
-    </div>
-    <div class="colonne">
-            <h4>Ailleurs et la sécurité</h4>
-              <p>Sécurité d'achat</p>
-              <p>Besoin d'aide</p>
-              <p>Cookies</p>
-    </div>
-    <div class="colonne">
-            <h4>Notre Politique</h4>
-              <p>Politique de confidentialité</p>
-              <p>condition générale de vente</p>
-    </div>
-    <div class="colonne">
-            <h4>Newsletter</h4>
+      <div class="colonne">
+        <p>Ailleurs est un service de voyage vous permettant de donner vie a vos envies et vos rêves d'enfance</p>
+      </div>
+      <div class="colonne">
+        <h4>Contact</h4>
+        <p>qui sommes-nous</p>
+        <p>nous contacter</p>
+        <p>le groupe</p>
+        <p>Assurance voyage</p>
+        <p class="mail">ailleursetmoi@partir.com"</p>
+      </div>
+      <div class="colonne">
+        <h4>Ailleurs et la sécurité</h4>
+        <p>Sécurité d'achat</p>
+        <p>Besoin d'aide</p>
+        <p>Cookies</p>
+      </div>
+      <div class="colonne">
+        <h4>Notre Politique</h4>
+        <p>Politique de confidentialité</p>
+        <p>condition générale de vente</p>
+      </div>
+      <div class="colonne">
+        <h4>Newsletter</h4>
         <form id="Newsletter">
-              <i class="far fa-envelope"></i>
-              <input id="envoiefin" type="email" placeholder="Entrez votre mail" required>
-              <button id="bouton-fin"type="submit"><i class="fas fa-circle-arrow-right"></i></button>
-        </form >
-    <div class="social-icons">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-pinterest"></i>
+          <i class="far fa-envelope"></i>
+          <input id="envoiefin" type="email" placeholder="Entrez votre mail" required>
+          <button id="bouton-fin" type="submit"><i class="fas fa-circle-arrow-right"></i></button>
+        </form>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-</footer>
+  </footer>
 </body>
+
 </html>
